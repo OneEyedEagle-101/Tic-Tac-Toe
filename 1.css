@@ -1,0 +1,85 @@
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.top {
+  background: rgb(73, 73, 73);
+  font-family: "Dosis";
+  font-weight: 800;
+  font-size: 7vh;
+  color: rgb(162, 213, 172);
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.outer {
+  height: 60vh;
+  width: 60vh;
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  flex: 3;
+  border-radius: 50%;
+  display: flex;
+}
+.cross {
+  flex: 1;
+  margin: 4px;
+  border-radius: 50%;
+  background-color: rgb(143, 150, 156);
+  border: solid 4px rgb(219, 224, 230);
+}
+.internal {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.cross:hover {
+  border: solid 2px rgb(112, 112, 214);
+}
+.copy {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: flex-end;
+  justify-items: center;
+  font-size: 15px;
+}
+
+.res {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
